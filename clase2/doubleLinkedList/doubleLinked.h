@@ -85,7 +85,5 @@ void DLList<T>::printReverse(){
 
 template <class T>
 void DLList<T>::update(T oldData, T newData){
-    if (deleteNode(oldData)) {
-        insert(newData);
-    }
+    if (deleteNode(oldData)) insert(newData);
 }

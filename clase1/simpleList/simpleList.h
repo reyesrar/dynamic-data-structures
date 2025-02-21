@@ -64,7 +64,5 @@ void List<T>::print(){
 
 template <class T>
 void List<T>::update(T oldData, T newData){
-    if (deleteNode(oldData)) {
-        insert(newData);
-    }
+    if (deleteNode(oldData)) insert(newData);
 }
