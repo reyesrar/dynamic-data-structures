@@ -15,6 +15,7 @@ class DLList{
         bool deleteNode(T);
         void print();
         void printReverse();
+        void update(T, T);
         
 };
 
@@ -79,5 +80,12 @@ void DLList<T>::printReverse(){
     while(actual != nullptr){
         actual->print();
         actual = actual->getPrev();
+    }
+}
+
+template <class T>
+void DLList<T>::update(T oldData, T newData){
+    if (deleteNode(oldData)) {
+        insert(newData);
     }
 }

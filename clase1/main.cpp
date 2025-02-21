@@ -6,10 +6,12 @@ using namespace std;
 int main(){
 
     List<int> simpleList = List<int>(nullptr);
-    simpleList.insert(2);
-    simpleList.insert(4);
-    simpleList.insert(8);
+    simpleList.insert(10);
+    simpleList.insert(6);
+    simpleList.insert(12);
     
+    simpleList.update(6, 11);
+
     simpleList.print();
 
     return 0;    

@@ -13,7 +13,7 @@ class List{
         void insert(T);
         bool deleteNode(T);
         void print();
-        
+        void update(T, T);
 };
 
 template <class T>
@@ -59,5 +59,12 @@ void List<T>::print(){
     while(actual != nullptr){
         actual->print();
         actual = actual->getNext();
+    }
+}
+
+template <class T>
+void List<T>::update(T oldData, T newData){
+    if (deleteNode(oldData)) {
+        insert(newData);
     }
 }

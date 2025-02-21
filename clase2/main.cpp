@@ -13,9 +13,11 @@ int main(){
     list.insert(4);
     list.insert(11);
 
+    list.update(11, 15);
+    list.update(4, 20);
     list.deleteNode(8);
     list.deleteNode(10);
-    list.deleteNode(17);
+    list.deleteNode(5);
 
     list.printReverse();
 }
