@@ -6,6 +6,7 @@ class Node{
         T data;
         Node<T>* left = nullptr;
         Node<T>* right = nullptr;
+        int height; // New property
     public:
         Node(T, Node<T>*, Node<T>*);
         Node(T);
@@ -16,6 +17,8 @@ class Node{
         void setRight(Node<T>*);
         T getData();
         void setData(T);
+        int getHeight(); // New method
+        void setHeight(int); // New method
         void print();
 };
 
@@ -26,11 +29,13 @@ Node<T>::Node(T data, Node<T>* left, Node<T>* right){
     this->data = data;
     this->left = left;
     this->right = right;
+    this->height = 1; // Initialize height
 }
 
 template<class T>
 Node<T>::Node(T data){
     this->data = data;
+    this->height = 1; // Initialize height
 }
 
 template<class T>
@@ -67,6 +72,16 @@ T Node<T>::getData(){
 template<class T>
 void Node<T>::setData(T data){
     this->data = data;
+}
+
+template<class T>
+int Node<T>::getHeight(){
+    return this->height;
+}
+
+template<class T>
+void Node<T>::setHeight(int height){
+    this->height = height;
 }
 
 template<class T>
