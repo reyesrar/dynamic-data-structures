@@ -5,6 +5,7 @@ Königsberg (Actualmente Kaliningrado, Rusia) era una ciudad de la antigua Prusi
 Para resolver este problema, se modela el mapa de Königsberg como un grafo no dirigido, donde:
 - Cada región es representada como un nodo.
 - Cada puente es representado como una arista entre dos nodos.
+- Cada puente puede ser transitado en ambas direcciones.
 
 El problema se reduce a determinar si el grafo tiene un ciclo euleriano, es decir, un recorrido que pase por todas las aristas exactamente una vez y regrese al punto de partida. Según la teoría de grafos, un grafo tiene un ciclo euleriano si y solo si:
 1. Es conexo (todas las regiones están conectadas directa o indirectamente).
