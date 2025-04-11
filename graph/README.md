@@ -26,3 +26,5 @@ El resultado del análisis se imprime en la consola.
 La solución del problema no sólo exige un camino euleriano, sino que además exige que forme un ciclo euleriano (Punto inicial = Punto final), de forma que el grado de los nodos debe de ser par. El grado de los nodos es 5,3,3,3. Por lo tanto, el problema no tiene solución.
 
 Sin embargo, al eliminar cualquiera de los puentes, se nos queda un grafo con nodos de grado par excepto una pareja de grado impar. En este caso tenemos un camino euleriano. De igual forma, el problema no tendría la solución pedida ya que no forma un ciclo euleriano. 
+
+El problema puede ser resuelto al agregar dos puentes para que el grado de los nodos sean pares, en el codigo se encuentran comentados los puentes 8 (Regiones A y D) y 9 (Regiones B y C), al remover el comentario y volver a compilar y ejecutar el codigo, es posible ver el ciclo euleriano.
