@@ -16,6 +16,7 @@ En este caso, se implementa un grafo en C++ para verificar estas condiciones y d
 # Implementación
 El programa utiliza una clase `Graph` para representar el grafo. Se definen métodos para:
 - Agregar nodos y aristas.
+- Para conexiones no dirigidas, deben ser agregados los caminos en ambas direcciones.
 - Verificar si el grafo tiene un ciclo y/o camino euleriano.
 - Modificar datos (de ser requerido)
 
